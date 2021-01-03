@@ -7,9 +7,9 @@
 
 // Address in Bytes of GCmemcard sections
 #define HEADER          0x0000
-#define DIRECT          0x2000
-#define DIRECT_B        0x4000
-#define BAM             0x6000
+#define DIRECTORY_O     0x2000
+#define DIRECTORY_B     0x4000
+#define BAM_O           0x6000
 #define BAM_B           0x8000
 #define DATA            0xa000
 
@@ -24,56 +24,56 @@
 #define HEADER_CS1                  0x01fc
 #define HEADER_CS2                  0x01fe
 // Size in Bytes of HEADER's subsections
-#define HEADER_SIZE_SOMETHING       0xb
-#define HEADER_SIZE_OSTIME          0x8
-#define HEADER_SIZE_ID              0x6
-#define HEADER_SIZE_ZEROES          0x2
-#define HEADER_SIZE_MEMSIZE         0x2
-#define HEADER_SIZE_ENCODING        0x2
-#define HEADER_SIZE_COUNTER         0x2
-#define HEADER_SIZE_CS1             0x2
-#define HEADER_SIZE_CS2             0x2
+#define SIZE_HEADER_SOMETHING       0xb
+#define SIZE_HEADER_OSTIME          0x8
+#define SIZE_HEADER_ID              0x6
+#define SIZE_HEADER_ZEROES          0x2
+#define SIZE_HEADER_MEMSIZE         0x2
+#define SIZE_HEADER_ENCODING        0x2
+#define SIZE_HEADER_COUNTER         0x2
+#define SIZE_HEADER_CS1             0x2
+#define SIZE_HEADER_CS2             0x2
 
-// Address in Bytes of DIRECT's and DIRECT_B's subsections (relative)
-#define DIRECT_GAMECODE             0x0
-#define DIRECT_MAKERCODE            0x0
-#define DIRECT_BANNER               0x0
-#define DIRECT_NAME                 0x0
-#define DIRECT_TIME                 0x0
-#define DIRECT_OFFSET               0x0
-#define DIRECT_ICON                 0x0
-#define DIRECT_ANIM                 0x0
-#define DIRECT_PERM                 0x0
-#define DIRECT_CCOUNTER             0x0
-#define DIRECT_BLOCK                0x0
-#define DIRECT_LENGTH               0x0
-#define DIRECT_COMMENT              0x0
-// Size in Bytes of DIRECT's and DIRECT_B's subsections
-#define DIRECT_SIZE_GAMECODE        0x0
-#define DIRECT_SIZE_MAKERCODE       0x0
-#define DIRECT_SIZE_BANNER          0x0
-#define DIRECT_SIZE_NAME            0x0
-#define DIRECT_SIZE_TIME            0x0
-#define DIRECT_SIZE_OFFSET          0x0
-#define DIRECT_SIZE_ICON            0x0
-#define DIRECT_SIZE_ANIM            0x0
-#define DIRECT_SIZE_PERM            0x0
-#define DIRECT_SIZE_CCOUNTER        0x0
-#define DIRECT_SIZE_BLOCK           0x0
-#define DIRECT_SIZE_LENGTH          0x0
-#define DIRECT_SIZE_COMMENT         0x0
+// Address in Bytes of DIRECTORY_O's and DIRECTORY_B's subsections (relative)
+#define DIRECTORY_GAMECODE             0x0
+#define DIRECTORY_MAKERCODE            0x0
+#define DIRECTORY_BANNER               0x0
+#define DIRECTORY_NAME                 0x0
+#define DIRECTORY_TIME                 0x0
+#define DIRECTORY_OFFSET               0x0
+#define DIRECTORY_ICON                 0x0
+#define DIRECTORY_ANIM                 0x0
+#define DIRECTORY_PERM                 0x0
+#define DIRECTORY_CCOUNTER             0x0
+#define DIRECTORY_BLOCK                0x0
+#define DIRECTORY_LENGTH               0x0
+#define DIRECTORY_COMMENT              0x0
+// Size in Bytes of DIRECTORY's and DIRECTORY_B's subsections
+#define SIZE_DIRECTORY_GAMECODE        0x0
+#define SIZE_DIRECTORY_MAKERCODE       0x0
+#define SIZE_DIRECTORY_BANNER          0x0
+#define SIZE_DIRECTORY_NAME            0x0
+#define SIZE_DIRECTORY_TIME            0x0
+#define SIZE_DIRECTORY_OFFSET          0x0
+#define SIZE_DIRECTORY_ICON            0x0
+#define SIZE_DIRECTORY_ANIM            0x0
+#define SIZE_DIRECTORY_PERM            0x0
+#define SIZE_DIRECTORY_CCOUNTER        0x0
+#define SIZE_DIRECTORY_BLOCK           0x0
+#define SIZE_DIRECTORY_LENGTH          0x0
+#define SIZE_DIRECTORY_COMMENT         0x0
 
-// Address in Bytes of BAM's and BAM_B's subsections (relative)
-#define BAM_CS1                     0x2
-#define BAM_CS2                     0x2
-#define BAM_UCOUNTER                0x2
-#define BAM_FREE                    0x2
-#define BAM_LAST                    0x2
-#define BAM_DATA                    0x2
+// Address in Bytes of BAM_O's and BAM_B's subsections (relative)
+#define BAM_CS1                     0x0
+#define BAM_CS2                     0x0
+#define BAM_UCOUNTER                0x0
+#define BAM_FREE                    0x0
+#define BAM_LAST                    0x0
+#define BAM_DATA                    0x0
 // Size in Bytes of BAM's and BAM_B's subsections
-#define BAM_CS1                     0x2
-#define BAM_CS2                     0x2
-#define BAM_UCOUNTER                0x2
-#define BAM_FREE                    0x2
-#define BAM_LAST                    0x2
-#define BAM_DATA                    0x2
+#define SIZE_BAM_CS1                     0x0
+#define SIZE_BAM_CS2                     0x0
+#define SIZE_BAM_UCOUNTER                0x0
+#define SIZE_BAM_FREE                    0x0
+#define SIZE_BAM_LAST                    0x0
+#define SIZE_BAM_DATA                    0x0
